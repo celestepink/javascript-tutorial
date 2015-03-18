@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript">
+	/*Ciclo While/Mientras
+		El ciclo While como su nombre lo indica se ejecuta mientras la condición sea verdadera y una vez la condición sea falsa se detiene.
+
+		La sintáxis del ciclo Mientras ó While es:
+		while( condición ){
+			instrucciones...
+		}
+
+		En el siguiente ejemplo vamos a hacer un ciclo que se repite 5 veces:
+		var i = 1;
+		while( i <= 5 ){
+			instrucciones...
+		}
+
+		ATENCIÓN!!!
+		Dentro del ciclo while generalmente tiene que haber una instrucción que haga que la condición cambie de valor, de lo contrario el ciclo se ejecutaría infinitamente!!
+
+	*/
+	
+	/*
+		Ejercicio: Carrito de compras
+		Hacer un algoritmo que permita registrar las compras de una caja de supermercado una a una, y al final me muestre el total de productos comprados. 
+
+		Adicionalmente hacer un algoritmo que guarde el precio de cada producto y calcular el total al finalizar la compra.
+
+		NOTA: Usar ciclo while
+	*/
+
+	var compras = [];//Nombres de los productos
+	var terminar = "no";//Variable de Control
+	var contador = 0;//Contador
+	var total = 0;//Acumulador
+
+	while( terminar != "si" ){
+
+		compras[contador] = prompt("Ingrese producto:");
+		
+		total = total + parseInt( prompt("Ingrese precio del producto") );
+
+		terminar = prompt( "¿Desea terminar la compra? si" );
+		contador++;
+
+	}
+
+	alert( "El total de productos comprados es: " + contador );
+	alert( "El valor total de las compras es: " + total);
+
+</script>
+</head>
+<body>
+</body>
+</html>

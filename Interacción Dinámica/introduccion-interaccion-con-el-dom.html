@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		#container{
+			width: 100px;
+			height: 100px;
+			border: 1px solid #000;
+			margin: 80px auto;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		
+	</div>
+	<script>
+		var container = document.getElementById("container");
+		container.onclick = function( container ){
+			document.getElementById("container").innerHTML = "Hola Mundo!";
+		};
+		
+	</script>
+</body>
+</html>

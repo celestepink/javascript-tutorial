@@ -1,0 +1,85 @@
+<html>
+<head>
+<script type="text/javascript">
+	/*
+		El condicional switch sirve para evaluar una expresión con diferentes tipos de casos.
+		
+		Sintáxis: 
+		switch( expresion a evaluar ){
+			case "1":
+				expresiones...
+			break;
+
+			case "hola":
+				expresiones...
+			break;
+
+			case "2":
+				expresiones...
+			break;
+
+			default://Se ejecuta cuando no cumple con ningúna condición
+				expresiones...
+			break;
+		}
+
+		Ejemplo: 
+		
+		switch( destino_viaje ){
+			case "cartagena":
+				precio = 300000;
+			break;
+
+			case "santa marta":
+				precio = 280000;
+			break;
+
+			case "guajira":
+				precio = 450000;
+			break;
+		}
+		
+		alert( precio );
+	*/
+
+	/*
+		Ejercicio: Hacer un programa que dependiendo del producto a comprar me arroje el valor de ese producto de la siguiente manera: (manzana: 500, pera: 1000, naranja: 800)
+
+		Adicionalmente si el usuario ingresa un producto que no corresponde a ninguno de estos ya mencionados que saque un mensaje de error diciendo que el producto no existe.
+	*/
+
+	var producto = prompt("Ingrese el producto:");
+	var valor = 0;
+
+	switch( producto ){
+		case "manzana":
+			valor = 500;
+		break;
+
+		case "pera":
+			valor = 1000;
+		break;
+
+		case "naranja":
+			valor = 800;
+		break;
+
+		default:
+			valor = 0;
+		break;
+	}
+
+	if( valor == 0 ){
+		alert("El producto no existe");
+	}else{
+		alert("El valor del producto " + producto + " es: " + valor);
+	}
+	
+	
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>

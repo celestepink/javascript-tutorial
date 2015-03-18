@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+	/*
+		Las funciones, sub-programa o sub-rutinas son estructuras de código que permiten ser reutilizadas ilimitadamente dentro del programa actual.
+
+		Sintáxis:
+		function nombre_de_la_funcion( parametros_separados_por_coma ){
+			expresiones...
+		}
+
+		Ejemplo: Una función que sume dos valores y que imprima en pantalla el resultado.((base*altura)/2)
+
+		function sumar( valor1, valor2){
+			var resultado = valor1 + valor2;
+			alert( "Resultado es: " + resultado );
+		}
+
+		Y para ejecutar la función:
+
+		sumar(5, 10);
+	*/
+	
+	/*
+		Ejercicio: Hacer un subprograma que calcule el área de un triángulo
+	*/
+
+	function area_triangulo( base, altura){
+		var area = (base * altura) / 2;
+		return area;
+	}
+
+	alert( area_triangulo(2, 5) );
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>
