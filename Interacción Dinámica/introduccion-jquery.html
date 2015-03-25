@@ -28,3 +28,26 @@
 	</div>
 </body>
 </html>
+
+	<button id="toggle">Toggle</button>
+
+	<p>Esta es una frase corta y sin importancia.</p>
+	<p>Y esta es otra frase que le sigue.</p>
+	<hr>
+
+	<button id="hide_effect">Hide</button>
+	<span> Me voy con efecto.</span>
+
+
+
+
+	
+		//toggle example:
+		$(#toggle).click(function(){
+			$("p").toggle();
+		});
+
+		//hide speed example:
+		$(·hide_effect).click(function(){
+			$("span").hide(1000);
+		});

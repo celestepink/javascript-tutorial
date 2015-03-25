@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//hide and show example:
+		$("#hide").click(function(){
+			$("p").hide();
+		});
+		$("#show").click(function(){
+			$("p").show();
+		});
+	});
+
+			//hide speed example:
+		$(document).ready(function(){
+		$("button").click(function(){
+			$("p").hide(1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<div><p>Estoy echo para aparecer y desaparecer asi que no se preocupen porque como me voy, vuelvo.</p>
+
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+	<hr>
+</div>
+
+	<div><button>Hide</button>
+	<p> Me voy con efecto.</p>
+</div>
+
+
+</body>
+</html>
